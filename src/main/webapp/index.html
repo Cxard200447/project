@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0; /* สีเทาอ่อน */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #f5f5f5; /* สีเทาขาว */
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333333; /* สีเทาเข้ม */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #555555; /* สีเทากลาง */
+            text-align: left;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #cccccc; /* สีเทาอ่อน */
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #999999; /* สีเทาเข้มขึ้นเมื่อโฟกัส */
+            box-shadow: 0 0 4px rgba(153, 153, 153, 0.5);
+        }
+        button {
+            padding: 10px;
+            background-color: #616161; /* สีเทาเข้ม */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #757575; /* สีเทาเข้มขึ้นเมื่อ hover */
+        }
+        a {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #424242; /* สีเทาเข้ม */
+            font-size: 14px;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #212121; /* สีเทาเข้มขึ้นเมื่อ hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>เข้าสู่ระบบ</h1>
+        <form action="login" method="post">
+            <label for="username">ชื่อผู้ใช้:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">เข้าสู่ระบบ</button>
+        </form>
+        
+    </div>
+</body>
+</html>
