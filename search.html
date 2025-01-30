@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ค้นหาและแก้ไขข้อมูล</title>
+    <style>
+        /* กำหนดสไตล์สำหรับทั้งหน้า */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #20232a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* กำหนดสไตล์ให้กับส่วนหัว */
+        h1, h2 {
+            text-align: center;
+            color: #61dafb;
+            margin-top: 20px;
+        }
+
+        /* จัดการฟอร์มค้นหา */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #282c34;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #333;
+            color: #f5f5f5;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #61dafb;
+            color: #20232a;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #4faadf;
+        }
+
+        /* ตาราง */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #282c34;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+
+        th {
+            background-color: #333;
+            color: #61dafb;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #2a2a2a;
+        }
+
+        tr:hover {
+            background-color: #3a3a3a;
+        }
+
+        a {
+            color: #61dafb;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-delete {
+            color: #ff5c5c;
+            font-weight: bold;
+        }
+
+        .btn-delete:hover {
+            text-decoration: underline;
+            color: #e63939;
+        }
+
+        /* ลิงก์กลับหน้าหลัก */
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 30px auto;
+            color: #61dafb;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #4faadf;
+        }
+
+        /* เพิ่มการแบ่งส่วน */
+        hr {
+            border: 1px solid #444;
+            margin: 20px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>ค้นหาและแก้ไขข้อมูล</h1>
+
+    <form action="search" method="get">
+        <label for="query">ค้นหาชื่อ:</label>
+        <input type="text" id="query" name="query" placeholder="กรอกชื่อที่ต้องการค้นหา" required>
+        <button type="submit">ค้นหา</button>
+    </form>
+
+    <hr>
+    
+
+    <a href="home.html" class="back-link">กลับหน้าหลัก</a>
+</body>
+</html>
